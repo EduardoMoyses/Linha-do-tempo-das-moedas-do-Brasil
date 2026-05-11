@@ -232,7 +232,7 @@ p {
 
 @media screen and (min-width:370px) {
     .timeline::before {
-        height: 96%;
+        height: 97%;
     }
 }
 
