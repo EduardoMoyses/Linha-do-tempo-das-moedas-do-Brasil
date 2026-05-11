@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.conteudo {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho {
+    min-height: 140px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: flex-start;
+    padding: 10px;
+    background-image: url('../../img/fundoh.png');
+    background-size: cover;
+    background-position: center right;
+    border-bottom: 1px solid rgba(173, 172, 172, 0.685);
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    left: -23px;
+    height: 60px;
+    width: 90px;
+}
+
+.titulo {
+    font-size: 12px;
+    color: white;
+    gap: 10px;
+}
+
+.titulo span {
+    color: rgb(0, 38, 255);
+}
+
+.titulo p {
+    color: rgb(160, 159, 159);
+}
+
+.principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000d2d;
+}
+
+.timeline {
+    width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 20px 0;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 103em;
+    background-color: #003366;
+    left: 19px;
+    top: 13px;
+}
+
+.item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    background-color: rgba(13, 146, 255, 0.11);
+    margin-left: 60px;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.item::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #003366;
+    left: -40px;
+    top: 93px;
+    transform: translate(-50%, -50%);
+}
+
+.item:first-child::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #003366;
+    left: -40px;
+    top: 0;
+    transform: translate(-50%, -50%);
+}
+
+.item:first-child::before {
+    display: none;
+}
+
+.item > img {
+    height: 60px;
+    width: 60px;
+}
+
+.item > h3 {
+    font-size: 16px;
+}
+
+.data {
+    margin-top: 5px;
+    color: #043eaa;
+    font-weight: bold;
+}
+
+.paragrafo {
+    color: #052647a6;
+    text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.219);
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.aside {
+    width: 90%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.fundo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgba(20, 147, 252, 0.205);
+    padding-bottom: 20px;
+}
+
+.iconsAside {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 5px;
+    color: #043eaac5;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.textoMoeda {
+    padding: 5px;
+    margin: 0 10px 10px 10px;
+}
+
+.textoMoeda > h2 {
+    color: rgb(0, 38, 255);
+    margin: 5px 0;
+}
+
+.dinheiro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #103eb1de;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    border-radius: 10px;
+    gap: 5px;
+    margin: 0 5px;
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 6px 4px;
+    font-size: 12px;
+    
+}
+
+.icone p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 9px;
+}
+
+@media screen and (min-width: 500px) {
+
+    .cabecalho {
+       width: 100%;
+       padding: 0;
+       line-height: 1.5;
+    }
+
+    .titulo h1 {
+        font-size: 3em;
+    }
+
+    .titulo h1, p {
+        margin-left: 10px;
+    }
+
+    .timeline::before {
+        height: 94%;
+    }
+
+    .item::before {
+        top: 70%;
+    }
+
+    .icon {
+        grid-column: 1;
+        grid-row: 1;
+        height: 100px;
+        width: 150px;
+        position: static;
+        align-self: start;
+        transform: scale(1.8);
+    }
+    
+}
+
+@media screen and (min-width: 1000px) {
+
+    .cabecalho {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        height: 420px;
+        width: 100%;
+        padding: 0;
+        align-items: start;
+    }
+
+    .icon {
+        grid-column: 1;
+        grid-row: 1;
+        height: 300px;
+        width: 350px;
+        position: static;
+        align-self: start;
+        transform: scale(1.5);
+    }
+
+    .titulo {
+        grid-column: 1;
+        grid-row: 2;
+        align-self: start;
+        margin-left: 10px;
+    }
+
+    .titulo h1 {
+        font-size: 4em;
+        line-height: 1.1;
+        white-space: nowrap;
+    }
+
+    .titulo p {
+        font-size: 2em;
+        margin-top: 10px;
+    }
+
+    .timeline::before {
+        height: 93%;
+    }
+
+    .item::before {
+        top: 70%;
+    }
+
+  .textoMoeda {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+  }
+
+  .textoMoeda h2 {
+    font-size: 2em;
+      order: 1;
+      margin: 0;
+  }
+
+  .dinheiro {
+      order: 2;
+  }
+
+  .textoMoeda p {
+      order: 3;
+      flex-basis: 100%;
+      margin-top: 20px;
+      text-align: center;
+  }
+
+}
