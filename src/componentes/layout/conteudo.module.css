@@ -230,6 +230,12 @@ p {
     font-size: 9px;
 }
 
+@media screen and (min-width:370px) {
+    .timeline::before {
+        height: 96%;
+    }
+}
+
 @media screen and (min-width: 500px) {
 
     .cabecalho {
